@@ -1,1 +1,12 @@
-<app-calculadora></app-calculadora>
+<div class="container">
+  <div class="col">
+    <h1>Ingrese los datos para calcular</h1>
+
+    <app-calculadora
+      (resultadoAux)="mostrarResultado($event)" >
+    </app-calculadora>
+
+    <app-resultado [mensajePadre]="mensaje"></app-resultado>
+
+  </div>
+</div>

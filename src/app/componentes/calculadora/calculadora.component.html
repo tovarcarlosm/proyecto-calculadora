@@ -1,32 +1,20 @@
-<div class="container">
-  <div class="col">
-    <h1>Ingrese los datos para calcular</h1>
-
-    <form>
-      <div class="mb-3">
-        <label>Número 1</label>
-        <input type="number" id="numero_uno" class="form-control" name="numero_uno" [(ngModel)]="inputNumeroUno">
-      </div>
-
-      <div class="mb-3">
-        <label>Número 2</label>
-        <input type="number" id="numero_dos" class="form-control" name="numero_dos" [(ngModel)]="inputNumeroDos">
-      </div>
-
-      <div class="d-grid gap-2 d-md-block">
-        <button type="button" class="btn btn-primary m-2" (click)="sumar()">Sumar</button>
-        <button type="button" class="btn btn-warning m-2" (click)="restar()">Restar</button>
-        <button type="button" class="btn btn-dark m-2" (click)="multiplicar()">Multiplicar</button>
-        <button type="button" class="btn btn-danger m-2" (click)="dividir()">Dividir</button>
-        <button type="button" class="btn btn-success m-2" (click)="potencia()">Potenciación</button>
-      </div>
-
-    </form>
-
-    <div class="mb-3">
-      <h2>Resultado: {{resultado}}</h2>
-    </div>
-
-
+<form>
+  <div class="mb-3">
+    <label>Número 1</label>
+    <input type="number" id="numero_uno" class="form-control" name="numero_uno" [(ngModel)]="inputNumeroUno">
   </div>
-</div>
+
+  <div class="mb-3">
+    <label>Número 2</label>
+    <input type="number" id="numero_dos" class="form-control" name="numero_dos" [(ngModel)]="inputNumeroDos">
+  </div>
+
+  <div class="d-grid gap-2 d-md-block">
+    <button type="button" class="btn btn-primary m-2" (click)="sumar()">Sumar</button>
+    <button type="button" class="btn btn-warning m-2" (click)="restar()">Restar</button>
+    <button type="button" class="btn btn-dark m-2" (click)="multiplicar()">Multiplicar</button>
+    <button type="button" class="btn btn-danger m-2" (click)="dividir()">Dividir</button>
+    <button type="button" class="btn btn-success m-2" (click)="potencia()">Potenciación</button>
+  </div>
+
+</form>
